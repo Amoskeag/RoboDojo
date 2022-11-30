@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Amoskeag_KiCAD_Lib")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Amoskeag-KiCAD-Lib/Amoskeag_KiCAD_Lib.pretty")(options "")(descr ""))
+)
