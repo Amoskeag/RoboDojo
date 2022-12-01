@@ -19,6 +19,8 @@ preflight:
       command: "date '+%Y-%m-%d'"
     - name: "AMOSKEAG_3DMODELS" # My custom libs!
       command: "echo 'Hardware/Libraries/Amoskeag_KiCAD_Libs/3D'"
+    - name: "ESPRESSIF_3DMODELS" # My custom libs!
+      command: "echo 'Libraries/Amoskeag_KiCAD_Libs'"
 
 filters:
   - name: only_jlc_parts
