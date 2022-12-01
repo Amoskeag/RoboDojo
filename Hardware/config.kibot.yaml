@@ -20,7 +20,7 @@ preflight:
     - name: "AMOSKEAG_3DMODELS"
       command: "echo 'Hardware/Libraries/Amoskeag_KiCAD_Libs/3D'"
     - name: "ESPRESSIF_3DMODELS"
-      command: "echo 'Hardware/Libraries/Amoskeag_KiCAD_Libs/3d'"
+      command: "echo 'Hardware/Libraries/Espressif-kicad-libraries/3d'"
 
 filters:
   - name: only_jlc_parts
