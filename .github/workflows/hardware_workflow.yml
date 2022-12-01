@@ -1,0 +1,83 @@
+name: KW1FOX-2 Hardware
+
+on:
+  push:
+    branches:
+      - "main"
+    tags:
+      - "*"
+  pull_request:
+    paths:
+      - "Hardware/**"
+
+jobs:
+  KiCad_Hardware:
+    runs-on: ubuntu-latest
+    name: KiCad Hardware
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - uses: INTI-CMNB/KiBot@v2_k6
+        with:
+          # Config file
+          config: Hardware/config.kibot.yaml
+          # Prefix for output in config file.
+          dir: _hardwareOutput
+
+          # Hardware Files
+          schema: "Hardware/ESP32 Robo Dev Board.kicad_sch"
+          board: "Hardware/ESP32 Robo Dev Board.kicad_pcb"
+
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Board-Hardware
+          path: _hardwareOutput
+
+  publish:
+    # Only run on tags
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    name: Publish
+    # needs: [make_docs, KiCad_Hardware]
+    needs: [KiCad_Hardware]
+
+    steps:
+      # Be in our repo
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # Download artifacts
+      # - uses: actions/download-artifact@v2
+      #   with:
+      #     name: Board-Manual
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: RobotBoard
+
+      - run: mkdir -p _staging/
+
+      # - run: cp *.pdf _staging/
+
+      - run: cp *.step _staging/
+
+      # Copy gerbers
+      - run: cp PCBWay/*.zip _staging/Board-$(git rev-parse --short HEAD)-PCBWay.zip
+      - run: cp JLCPCB/*.zip _staging/Board-$(git rev-parse --short HEAD)-JLCPCB.zip
+
+      - name: Upload Docs to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: "_staging/*"
+          tag: ${{ github.ref }}
+          overwrite: true
+          prerelease: true
+          body: "Amoskeag Robotics, Automated with github ci/cd."
+          file_glob: true
