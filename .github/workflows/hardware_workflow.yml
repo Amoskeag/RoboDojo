@@ -1,4 +1,4 @@
-name: KW1FOX-2 Hardware
+name: RoboDogo Workflow
 
 on:
   push:
