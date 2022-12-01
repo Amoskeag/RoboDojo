@@ -1,3 +1,6 @@
-[submodule "ESP32 Robo Dev Board/Libraries/Amoskeag_KiCAD_Libs"]
-	path = ESP32 Robo Dev Board/Libraries/Amoskeag_KiCAD_Libs
-	url = https://github.com/Amoskeag/Amoskeag_KiCAD_Libs.git
+[submodule "Hardware/Libraries/Amoskeag_KiCAD_Libs"]
+	path = Hardware/Libraries/Amoskeag_KiCAD_Libs
+	url = https://github.com/Amoskeag/Amoskeag_KiCAD_Libs
+[submodule "Hardware/Libraries/Espressif-kicad-libraries"]
+	path = Hardware/Libraries/Espressif-kicad-libraries
+	url = https://github.com/espressif/kicad-libraries
