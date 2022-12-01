@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name "Amoskeag-KiCAD-Lib")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Amoskeag_KiCAD_Libs/Amoskeag-KiCAD-Lib.kicad_sym")(options "")(descr ""))
-  (lib (name "ATLogo_Sym")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Amoskeag_KiCAD_Libs/ATLogo_Sym.kicad_sym")(options "")(descr ""))
+  (lib (name "Amoskeag-KiCAD-Lib")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Amoskeag_KiCAD_Libs/Libraries/Amoskeag-KiCAD-Lib.kicad_sym")(options "")(descr ""))
 )
