@@ -1,4 +1,4 @@
-name: RoboDogo Workflow
+name: RoboDojo Workflow
 
 on:
   push:
