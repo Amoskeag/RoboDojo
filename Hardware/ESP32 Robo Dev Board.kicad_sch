@@ -1705,7 +1705,7 @@
   (symbol (lib_id "power:GND") (at 207.01 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 713083df-12bf-4081-9211-169792f90f86)
-    (property "Reference" "#PWR07" (id 0) (at 207.01 54.61 0)
+    (property "Reference" "#PWR08" (id 0) (at 207.01 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 207.01 53.34 0))
@@ -1721,7 +1721,7 @@
   (symbol (lib_id "power:GND") (at 205.74 26.67 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 763b259e-f9f8-4217-9efd-65ca784f6851)
-    (property "Reference" "#PWR?" (id 0) (at 205.74 33.02 0)
+    (property "Reference" "#PWR07" (id 0) (at 205.74 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 199.39 27.94 0)
@@ -1884,13 +1884,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Male") (at 199.39 22.86 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid a3149699-8a34-42d1-ac77-5fe843d39d26)
-    (property "Reference" "J_B1" (id 0) (at 203.2 20.32 0)
+    (property "Reference" "J_B2" (id 0) (at 203.2 20.32 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "" (id 1) (at 204.47 17.78 0)
+    (property "Value" "Batt In" (id 1) (at 204.47 17.78 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (id 2) (at 199.39 22.86 0)
+    (property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" (id 2) (at 199.39 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 199.39 22.86 0)
@@ -2143,8 +2143,11 @@
     (path "/cf9a789d-884a-41da-bcba-44bb1150ba37"
       (reference "#PWR06") (unit 1) (value "GND") (footprint "")
     )
-    (path "/713083df-12bf-4081-9211-169792f90f86"
+    (path "/763b259e-f9f8-4217-9efd-65ca784f6851"
       (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/713083df-12bf-4081-9211-169792f90f86"
+      (reference "#PWR08") (unit 1) (value "GND") (footprint "")
     )
     (path "/2a967591-2c10-4303-bb18-7a855e4ea57c"
       (reference "#PWR09") (unit 1) (value "GND") (footprint "")
@@ -2254,9 +2257,6 @@
     (path "/431f30bc-b67e-4c22-9850-1cef51314458/5e567ad1-e55b-4136-b3bb-0f0a0863f10d"
       (reference "#PWR044") (unit 1) (value "GND") (footprint "")
     )
-    (path "/763b259e-f9f8-4217-9efd-65ca784f6851"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/8f68081f-33f7-4342-b1f0-d2938b6c2bf0"
       (reference "C1") (unit 1) (value "2.2 µF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
@@ -2315,7 +2315,7 @@
       (reference "J_B1") (unit 1) (value "Motor B Output") (footprint "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical")
     )
     (path "/a3149699-8a34-42d1-ac77-5fe843d39d26"
-      (reference "J_B1") (unit 1) (value "Batt In") (footprint "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical")
+      (reference "J_B2") (unit 1) (value "Batt In") (footprint "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical")
     )
     (path "/b9644345-2c8d-4f54-9d32-2353cd6b3881"
       (reference "R1") (unit 1) (value "2K") (footprint "Resistor_SMD:R_0805_2012Metric")
