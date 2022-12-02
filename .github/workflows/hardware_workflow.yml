@@ -52,18 +52,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Download artifacts
-      # - uses: actions/download-artifact@v2
-      #   with:
-      #     name: Board-Manual
-
       - uses: actions/download-artifact@v2
         with:
-          name: RobotBoard
+          name: Board-Hardware
 
       - run: mkdir -p _staging/
-
-      # - run: cp *.pdf _staging/
 
       - run: cp *.step _staging/
 
@@ -79,5 +72,5 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           prerelease: true
-          body: "Amoskeag Robotics, Automated with github ci/cd."
+          body: "Amoskeag Technologies, Automated with github ci/cd."
           file_glob: true
