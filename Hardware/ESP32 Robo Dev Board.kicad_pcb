@@ -345,7 +345,7 @@
     (zone (net 0) (net_name "") (layer "F.Cu") (tstamp c0dd870c-6b67-4a25-b1f0-827e41800e92) (hatch full 0.508)
       (connect_pads (clearance 0))
       (min_thickness 0.254)
-      (keepout (tracks allowed) (vias not_allowed) (pads allowed ) (copperpour not_allowed) (footprints not_allowed))
+      (keepout (tracks allowed) (vias not_allowed) (pads allowed) (copperpour not_allowed) (footprints not_allowed))
       (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
       (polygon
         (pts
@@ -448,16 +448,16 @@
       (net 73 "unconnected-(RF8-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp 9b0d7f6f-0ec7-4c77-bd8c-c7751d158eca))
     (pad "6" thru_hole oval (at 0 12.7 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 74 "unconnected-(RF8-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp 8ae5dea9-c21b-4b03-ba19-4c45ca52130d))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (layer "F.Cu")
     (tedit 59FED5CC) (tstamp 25d6f7b3-548c-4427-b440-441e42bfd7c3)
-    (at 162.120129 102.159872 -45)
+    (at 153.25 111 135)
     (descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x06 2.54mm single row")
     (property "Sheetfile" "Range Finder Array.kicad_sch")
@@ -468,7 +468,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 867c15eb-ffea-4211-9393-7565d89782d0)
     )
-    (fp_text value "Conn_01x06_Female" (at 5.289158 7.354092 225) (layer "F.Fab")
+    (fp_text value "Conn_01x06_Female" (at -5.656854 6.363961 45) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8b4e2fb6-524b-4051-9a38-a1ebad5fb90f)
     )
@@ -491,28 +491,28 @@
     (fp_line (start -1.27 -0.635) (end -0.635 -1.27) (layer "F.Fab") (width 0.1) (tstamp d52dc946-bd9d-42a4-9955-34e3b063e6e6))
     (fp_line (start 1.27 13.97) (end -1.27 13.97) (layer "F.Fab") (width 0.1) (tstamp eb251132-3fac-4444-b276-83ec8f89a5e4))
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer "F.Fab") (width 0.1) (tstamp f7325248-3e37-4579-9ecb-f20db6a968ba))
-    (pad "1" thru_hole rect (at 0 0 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "1" thru_hole rect (at 0 0 135) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 "+3V3") (pinfunction "Pin_1") (pintype "passive") (tstamp 43920ced-84b4-4a4b-a60a-be9a49dc99d6))
-    (pad "2" thru_hole oval (at 0 2.54 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "2" thru_hole oval (at 0 2.54 135) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp 2d96a81f-c9dd-46c0-a0c5-537d6fda6c5c))
-    (pad "3" thru_hole oval (at 0 5.08 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "3" thru_hole oval (at 0 5.08 135) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 81 "/RF4_C") (pinfunction "Pin_3") (pintype "passive") (tstamp f3b62168-527f-42d3-a1a6-cf1a9bde3ad1))
-    (pad "4" thru_hole oval (at 0 7.62 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "4" thru_hole oval (at 0 7.62 135) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 82 "/RF4_D") (pinfunction "Pin_4") (pintype "passive") (tstamp 39c4e367-9840-4adb-9166-1d3cfa5255f8))
-    (pad "5" thru_hole oval (at 0 10.16 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "5" thru_hole oval (at 0 10.16 135) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 65 "unconnected-(RF4-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp 454861b0-ac6a-456e-ba8e-c97f6ea78544))
-    (pad "6" thru_hole oval (at 0 12.7 315) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "6" thru_hole oval (at 0 12.7 135) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 66 "unconnected-(RF4-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp c9b9c375-7bc5-4f41-9768-ac7f294b3686))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (layer "F.Cu")
     (tedit 59FED5CC) (tstamp 3fc8c990-e043-4c52-83b7-97ad044b36e4)
-    (at 166.74 81.3)
+    (at 166.75 94 180)
     (descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x06 2.54mm single row")
     (property "Sheetfile" "Range Finder Array.kicad_sch")
@@ -523,7 +523,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8a975ca7-fb62-4de6-bd17-4d4f10405537)
     )
-    (fp_text value "Conn_01x06_Female" (at 3.25 7.54 90) (layer "F.Fab")
+    (fp_text value "Conn_01x06_Female" (at -4 6.75 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e12636c0-f07a-4617-a873-ced7b96f9e91)
     )
@@ -546,22 +546,22 @@
     (fp_line (start 1.27 -1.27) (end 1.27 13.97) (layer "F.Fab") (width 0.1) (tstamp 32a951d8-69bc-4b49-832d-091c4f201cc8))
     (fp_line (start -1.27 13.97) (end -1.27 -0.635) (layer "F.Fab") (width 0.1) (tstamp 394e1ed0-8c89-42f5-b29c-c7a94e417c6e))
     (fp_line (start -1.27 -0.635) (end -0.635 -1.27) (layer "F.Fab") (width 0.1) (tstamp a19baae9-fdd5-4794-97c8-9c6b2987aee9))
-    (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "1" thru_hole rect (at 0 0 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 "+3V3") (pinfunction "Pin_1") (pintype "passive") (tstamp e07d51cb-8fc6-40e0-b07e-49b0144c0654))
-    (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "2" thru_hole oval (at 0 2.54 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "Pin_2") (pintype "passive") (tstamp 18f16ec2-feef-4127-a4a7-c5b39363af30))
-    (pad "3" thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "3" thru_hole oval (at 0 5.08 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 79 "/RF3_C") (pinfunction "Pin_3") (pintype "passive") (tstamp dc239835-79f8-474e-8d8a-a714d2df638b))
-    (pad "4" thru_hole oval (at 0 7.62) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "4" thru_hole oval (at 0 7.62 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 80 "/RF3_D") (pinfunction "Pin_4") (pintype "passive") (tstamp 048c7540-ff7c-451b-9ff6-06a7e2e3453f))
-    (pad "5" thru_hole oval (at 0 10.16) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "5" thru_hole oval (at 0 10.16 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 63 "unconnected-(RF3-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp d0b0f592-d581-4217-a431-ebdc44f4a283))
-    (pad "6" thru_hole oval (at 0 12.7) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
+    (pad "6" thru_hole oval (at 0 12.7 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 64 "unconnected-(RF3-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp e0454279-c47e-4ebf-ba97-08d6862afc62))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1010,10 +1010,10 @@
       (net 71 "unconnected-(RF7-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp 0c0f8d91-1d6d-4ca6-ac75-13291023b8b3))
     (pad "6" thru_hole oval (at 0 12.7) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 72 "unconnected-(RF7-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp 4ea97b57-c091-4b9d-b104-ec090cbbde61))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1395,10 +1395,10 @@
       (net 75 "unconnected-(RF1-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp e944669e-51b4-498b-8735-89631f6245f7))
     (pad "6" thru_hole oval (at 0 12.7 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 76 "unconnected-(RF1-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp 443c2a07-e2da-4dee-95b1-1da39022b7ed))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1870,10 +1870,10 @@
       (net 67 "unconnected-(RF5-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp 70f34469-60c4-4dd0-8ef8-fab04910168d))
     (pad "6" thru_hole oval (at 0 12.7 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 68 "unconnected-(RF5-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp ef3edd4a-515f-47e6-9dad-0ec6876144ff))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1925,10 +1925,10 @@
       (net 69 "unconnected-(RF6-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp 02314b8c-4ce6-45f9-8e16-65c90dd1fe47))
     (pad "6" thru_hole oval (at 0 12.7 45) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 70 "unconnected-(RF6-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp 8219463a-40cb-4f6e-bb68-38bc40dc10ea))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -2148,10 +2148,10 @@
       (net 61 "unconnected-(RF2-Pad5)") (pinfunction "Pin_5") (pintype "passive+no_connect") (tstamp 99480a9a-3166-4647-8d4f-29e9bc037765))
     (pad "6" thru_hole oval (at 0 12.7 225) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 62 "unconnected-(RF2-Pad6)") (pinfunction "Pin_6") (pintype "passive+no_connect") (tstamp 82fbb809-5a46-40e3-b186-a4ff21347672))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
-      (offset (xyz 0 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Horizontal.wrl"
+      (offset (xyz 0 -12.7 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -5346,11 +5346,11 @@
   (segment (start 120.95943 77.45943) (end 125.93393 77.45943) (width 0.25) (layer "B.Cu") (net 2) (tstamp dab5e399-e8ea-40fd-9a7b-a2bbde566cee))
   (segment (start 120.94886 77.47) (end 120.95943 77.45943) (width 0.25) (layer "B.Cu") (net 2) (tstamp ebcda845-c52c-4790-81da-11497ab76142))
   (segment (start 143.25 96.25) (end 143.25 97.637) (width 0.25) (layer "B.Cu") (net 2) (tstamp f61c10b1-1fba-43f3-91a7-dce0268e767f))
-  (segment (start 144 91.25) (end 143.1055 90.3555) (width 0.25) (layer "F.Cu") (net 3) (tstamp 5de1a19e-ed3a-402e-b640-c6e72163f139))
   (segment (start 150.66066 94) (end 151.25 94) (width 0.25) (layer "F.Cu") (net 3) (tstamp a2c93db6-3f35-4d59-b474-59a10297413a))
+  (segment (start 144 91.25) (end 143.1055 90.3555) (width 0.25) (layer "F.Cu") (net 3) (tstamp aacfb35f-f7fc-46b3-ba51-0e3a0bd1564e))
   (segment (start 150.109673 94.550987) (end 150.66066 94) (width 0.25) (layer "F.Cu") (net 3) (tstamp af0c6884-3cad-4a82-9988-28d96ad73cc4))
   (segment (start 143.1055 90.3555) (end 143.1055 89.5) (width 0.25) (layer "F.Cu") (net 3) (tstamp f89149d3-4057-4b2c-aea7-833cdb31f17f))
-  (via (at 144 91.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 3) (tstamp 1f346adf-e5fd-46a2-816c-4df750c44157))
+  (via (at 144 91.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 3) (tstamp 57f38fdc-fdae-4841-91df-9be63c633af4))
   (via (at 151.25 94) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 3) (tstamp 9c255290-f1be-486c-97c3-4917c1216fce))
   (segment (start 147.262299 91.262299) (end 144.012299 91.262299) (width 0.25) (layer "B.Cu") (net 3) (tstamp 3446888c-6f56-40c0-88fd-2f35cc29ff9c))
   (segment (start 144.012299 91.262299) (end 144 91.25) (width 0.25) (layer "B.Cu") (net 3) (tstamp 354e6d49-98c0-4e20-99d5-c2a8aa4b95b1))
@@ -5696,7 +5696,7 @@
   (zone (net 0) (net_name "") (layer "F.Cu") (tstamp 2ec0940d-c233-4a46-aa6b-a5e0c0f81dc6) (hatch edge 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
-    (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed ) (copperpour not_allowed) (footprints allowed))
+    (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
     (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
@@ -27657,7 +27657,7 @@
   (zone (net 0) (net_name "") (layer "F.Cu") (tstamp d1f6e3e3-0c24-4640-b4d1-bdf0985c4d56) (hatch edge 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
-    (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))
+    (keepout (tracks allowed) (vias allowed) (pads allowed) (copperpour not_allowed) (footprints allowed))
     (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
