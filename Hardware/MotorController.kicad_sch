@@ -5,10 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "STSPIN250 Module")
-    (date "2022-11-26")
-    (rev "0.1")
+    (title "TurtleBot Mainboard")
+    (date "2022-11-27")
+    (rev "${REVISION}")
     (company "Amoskeag Technologies")
+    (comment 4 "${FULL_REVISION}")
   )
 
   (lib_symbols

@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "TurtleBot Mainboard")
+    (date "2022-11-27")
+    (rev "${REVISION}")
+    (company "Amoskeag Technologies")
+    (comment 4 "${FULL_REVISION}")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_01x06_Female" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 7.62 0)
