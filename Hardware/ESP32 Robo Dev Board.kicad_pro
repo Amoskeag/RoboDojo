@@ -381,7 +381,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "ESP32 Robo Dev Board.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
