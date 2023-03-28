@@ -558,7 +558,7 @@
     (effects (font (size 3 3)) (justify left bottom))
     (uuid 0e771081-a3d0-499a-b3be-82bfc87b46f0)
   )
-  (text "Motor Controller\n\nWhats the Fucking VRef about?\n\n- The Vref = Rsnsx * I_load(peak)\n\nWhich means that if the back EMF of the motor goes above Vref do the shutdown sequence, this means that the Vref sets the Current Control. \n\nTherefore, the reason we need to put a Filter on the Ref pin. is to convert the Digital output of the MCU to an Analog output for purposes of current control."
+  (text "Motor Controller\n\nWhats the VRef about?\n\n- The Vref = Rsnsx * I_load(peak)\n\nWhich means that if the back EMF of the motor goes above Vref do the shutdown sequence, this means that the Vref sets the Current Control. \n\nTherefore, the reason we need to put a Filter on the Ref pin. is to convert the Digital output of the MCU to an Analog output for purposes of current control."
     (at 16.51 34.29 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 37288c5f-188f-46f9-83a0-f3f2240a7cf1)
