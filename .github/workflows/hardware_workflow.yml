@@ -37,8 +37,8 @@ jobs:
 
           # Hardware Files
           #
-          schema: "Hardware/RoboDojo/RoboDojo.kicad_sch"
-          board: "Hardware/RoboDojo/RoboDojo.kicad_pcb"
+          schema: "Hardware/ESP32 Robo Dev Board.kicad_sch"
+          board: "Hardware/ESP32 Robo Dev Board.kicad_pcb"
           #
 
       - name: upload results
