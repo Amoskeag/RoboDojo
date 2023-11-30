@@ -38,6 +38,9 @@ fp-info-cache
 *.dsn
 *.ses
 
+# kicad Locks
+*.lck
+
 # Exported BOM files
 *.xml
 *.csv
