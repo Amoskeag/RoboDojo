@@ -1,11 +1,7 @@
-[![Docs](https://github.com/Amoskeag/RoboDojo/actions/workflows/docs_workflow.yml/badge.svg)](https://github.com/Amoskeag/RoboDojo/actions/workflows/docs_workflow.yml)
 [![Hardware](https://github.com/Amoskeag/RoboDojo/actions/workflows/hardware_workflow.yml/badge.svg)](https://github.com/Amoskeag/RoboDojo/actions/workflows/hardware_workflow.yml)
-[![Firmware](https://github.com/Amoskeag/RoboDojo/actions/workflows/firmware_workflow.yml/badge.svg)](https://github.com/Amoskeag/RoboDojo/actions/workflows/firmware_workflow.yml)
 
 
 # RoboDojo
-
-![Banner](Static/Banner.png)
 
 This repo contains all the firmware and hardware for the RoboDojo.
 
