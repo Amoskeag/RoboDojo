@@ -1,4 +1,9 @@
-name: RoboDojo Workflow
+name: Hardware
+
+permissions:
+  contents: write
+  actions: read
+  checks: write
 
 on:
   push:
@@ -9,7 +14,9 @@ on:
   pull_request:
     paths:
       - "Hardware/**"
+      - ".github/workflows/**"
 
+#
 jobs:
   KiCad_Hardware:
     runs-on: ubuntu-latest
@@ -21,7 +28,7 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - uses: INTI-CMNB/KiBot@v2_k6
+      - uses: INTI-CMNB/KiBot@v2_k7
         with:
           # Config file
           config: Hardware/config.kibot.yaml
@@ -29,8 +36,10 @@ jobs:
           dir: _hardwareOutput
 
           # Hardware Files
+          #
           schema: "Hardware/ESP32 Robo Dev Board.kicad_sch"
           board: "Hardware/ESP32 Robo Dev Board.kicad_pcb"
+          #
 
       - name: upload results
         uses: actions/upload-artifact@v2
@@ -38,12 +47,30 @@ jobs:
           name: Board-Hardware
           path: _hardwareOutput
 
+  dev-publish:
+    # publish only to devs
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    name: Dev-Publish
+    needs: [KiCad_Hardware]
+
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: Board-Hardware
+
+      - name: Upload KiCAD Artifacts
+        uses: edunad/actions-image@v2.0.3
+        with:
+          path: "*-3D_top.png"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          title: "PCB"
+
   publish:
     # Only run on tags
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     name: Publish
-    # needs: [make_docs, KiCad_Hardware]
     needs: [KiCad_Hardware]
 
     steps:
@@ -64,7 +91,7 @@ jobs:
       - run: cp PCBWay/*.zip _staging/Board-$(git rev-parse --short HEAD)-PCBWay.zip
       - run: cp JLCPCB/*.zip _staging/Board-$(git rev-parse --short HEAD)-JLCPCB.zip
 
-      - name: Upload Docs to release
+      - name: Upload artifacts to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -72,5 +99,6 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           prerelease: true
-          body: "Amoskeag Technologies, Automated with github ci/cd."
+          #
+          body: "Amoskeag, Automated with github ci/cd."
           file_glob: true
