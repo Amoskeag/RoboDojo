@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.2,
-          "height": 3.8,
-          "width": 3.8
+          "drill": 0.0,
+          "height": 1.15,
+          "width": 0.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -436,7 +436,14 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "/Motor Controller Left/Motor_Out1": "rgb(248, 53, 152)",
+      "/Motor Controller Left/Motor_Out2": "rgb(255, 41, 179)",
+      "/Motor Controller Right/Motor_Out1": "rgb(169, 41, 255)",
+      "/Motor Controller Right/Motor_Out2": "rgb(195, 101, 255)",
+      "/PWM A": "rgb(105, 220, 255)",
+      "/PWM B": "rgb(97, 198, 189)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -507,10 +514,6 @@
     [
       "5ec2a74b-d65b-40d2-955e-29a0a34a9752",
       "Motor Controller Right"
-    ],
-    [
-      "431f30bc-b67e-4c22-9850-1cef51314458",
-      "Proximity Array"
     ],
     [
       "d93a9795-d14e-40f3-89d1-1ddce239a16f",

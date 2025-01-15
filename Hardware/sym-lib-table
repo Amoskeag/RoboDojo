@@ -1,3 +1,4 @@
 (sym_lib_table
+  (version 7)
   (lib (name "Amoskeag-KiCAD-Lib")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Amoskeag_KiCAD_Libs/Libraries/Amoskeag-KiCAD-Lib.kicad_sym")(options "")(descr ""))
 )
