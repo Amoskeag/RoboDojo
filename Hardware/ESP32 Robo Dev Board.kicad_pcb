@@ -12460,7 +12460,7 @@
 	(footprint "Amoskeag_KiCAD_Lib:ATLogo"
 		(layer "B.Cu")
 		(uuid "172bdc8f-bf02-4e01-b7c5-0b236e9d955b")
-		(at 152.64 120.64 180)
+		(at 152.835048 120.625073 180)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "B.SilkS")
