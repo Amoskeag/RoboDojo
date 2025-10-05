@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.15,
-          "width": 0.6
+          "drill": 2.2,
+          "height": 3.8,
+          "width": 3.8
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -160,7 +160,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -171,7 +171,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -182,7 +182,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -194,7 +194,8 @@
       ],
       "track_widths": [
         0.0,
-        0.25
+        0.3,
+        0.65
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -500,14 +501,7 @@
     "meta": {
       "version": 4
     },
-    "net_colors": {
-      "/Motor Controller Left/Motor_Out1": "rgb(248, 53, 152)",
-      "/Motor Controller Left/Motor_Out2": "rgb(255, 41, 179)",
-      "/Motor Controller Right/Motor_Out1": "rgb(169, 41, 255)",
-      "/Motor Controller Right/Motor_Out2": "rgb(195, 101, 255)",
-      "/PWM A": "rgb(105, 220, 255)",
-      "/PWM B": "rgb(97, 198, 189)"
-    },
+    "net_colors": null,
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -519,7 +513,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "ESP32 Robo Dev Board.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -527,7 +521,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -549,24 +543,6 @@
           "show": true
         },
         {
-          "group_by": true,
-          "label": "Value",
-          "name": "Value",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
-        },
-        {
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
@@ -574,15 +550,45 @@
         },
         {
           "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from BOM",
+          "name": "${EXCLUDE_FROM_BOM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "Grouped By Value",
+      "include_excluded_from_bom": true,
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },

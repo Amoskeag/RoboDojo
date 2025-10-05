@@ -4478,6 +4478,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push_Dual_x2"
 			(pin_names
 				(offset 1.016)
@@ -5358,6 +5508,12 @@
 		(uuid "45945356-b86e-4055-8522-e990d0874682")
 	)
 	(junction
+		(at 88.9 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59b2ceb6-955a-445e-a4f4-38098ab0b2e1")
+	)
+	(junction
 		(at 57.15 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5678,6 +5834,16 @@
 			(type default)
 		)
 		(uuid "13ee44a8-5125-4f9c-951b-e6ca32709478")
+	)
+	(wire
+		(pts
+			(xy 88.9 194.31) (xy 96.52 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14e93cf8-55cf-4397-8230-1222f7e5748a")
 	)
 	(polyline
 		(pts
@@ -6501,6 +6667,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 194.31) (xy 88.9 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67fd819b-6c41-40d5-90a6-2fb78b60f2be")
+	)
+	(wire
+		(pts
 			(xy 160.02 67.31) (xy 160.02 58.42)
 		)
 		(stroke
@@ -7021,6 +7197,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 204.47) (xy 88.9 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aad6e735-80ac-4dff-a5a6-78ac4947b4f0")
+	)
+	(wire
+		(pts
 			(xy 67.31 46.99) (xy 67.31 43.18)
 		)
 		(stroke
@@ -7331,6 +7517,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 194.31) (xy 68.58 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61f1551-d6fd-4683-9a13-4a4a91bee954")
+	)
+	(wire
+		(pts
 			(xy 284.48 97.79) (xy 284.48 101.6)
 		)
 		(stroke
@@ -7348,6 +7544,16 @@
 			(type default)
 		)
 		(uuid "c7401b2d-2574-49c3-8e9a-65e630308123")
+	)
+	(wire
+		(pts
+			(xy 86.36 194.31) (xy 88.9 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c85275bf-db56-422c-b0d5-9f1fa104b1f0")
 	)
 	(wire
 		(pts
@@ -7501,6 +7707,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 191.77) (xy 64.77 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8e9a583-0c0b-40a0-90a2-6e0de434e092")
+	)
+	(wire
+		(pts
 			(xy 256.54 181.61) (xy 270.51 181.61)
 		)
 		(stroke
@@ -7598,6 +7814,16 @@
 			(type default)
 		)
 		(uuid "f65a5190-6d8c-4bef-860f-c418f2acda3c")
+	)
+	(wire
+		(pts
+			(xy 73.66 194.31) (xy 76.2 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f76d27e0-3d92-4dee-a705-9898b5d8aac5")
 	)
 	(wire
 		(pts
@@ -7908,6 +8134,16 @@
 			(justify right bottom)
 		)
 		(uuid "450a275f-a784-4f8c-9b7a-3cebad879096")
+	)
+	(label "Boot"
+		(at 96.52 194.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "45b6bd52-7711-4ac8-a10a-b78defd940b9")
 	)
 	(label "VBAT_DET"
 		(at 271.78 212.09 180)
@@ -8596,6 +8832,72 @@
 			(project "ESP32 Robo Dev Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 88.9 207.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b171035-9fc2-419b-ae30-37b43b5c50d3")
+		(property "Reference" "#PWR051"
+			(at 88.9 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 88.9 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91542ee4-f42b-466c-9e3f-c245f9a6be05")
+		)
+		(instances
+			(project "ESP32 Robo Dev Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -10508,6 +10810,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 81.28 194.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "542dcf9f-d808-44a4-9470-e520b9e0cc3e")
+		(property "Reference" "SW2"
+			(at 81.28 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 81.28 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-100x"
+			(at 81.28 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 81.28 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a41b8a9-8890-4dd3-a3c5-a115d83550b9")
+		)
+		(pin "2"
+			(uuid "fa4b1654-13f1-4485-b9ca-8fc4b438c042")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 57.15 130.81 0)
 		(unit 1)
@@ -10699,6 +11069,140 @@
 			(project "ESP32 Robo Dev Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 71.12 194.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5574386b-98a8-40ea-a870-9f3f18f76b94")
+		(property "Reference" "Rs3"
+			(at 71.12 199.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 71.12 196.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 71.12 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5978291b-cd8c-439d-9780-881dced6439f")
+		)
+		(pin "2"
+			(uuid "63c3da1f-62f8-4178-8083-925dcd25a4e6")
+		)
+		(instances
+			(project "ESP32 Robo Dev Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "Rs3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 88.9 201.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ba0b0e0-a37e-4393-a5cc-06095b0de8ca")
+		(property "Reference" "Rs2"
+			(at 83.82 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "18 KΩ"
+			(at 86.36 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 88.9 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40b0d6aa-c68a-492d-90bb-696ca5d180f2")
+		)
+		(pin "2"
+			(uuid "9afe0563-2e35-484c-ad26-1034453f93d4")
+		)
+		(instances
+			(project "ESP32 Robo Dev Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "Rs2")
 					(unit 1)
 				)
 			)
@@ -10979,6 +11483,72 @@
 			(project "ESP32 Robo Dev Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 64.77 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d2247ec-cc14-44cb-bffe-0fd48ce03316")
+		(property "Reference" "#PWR052"
+			(at 64.77 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 64.77 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 64.77 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1256d735-5ad3-49db-b59d-1cd62fc338f6")
+		)
+		(instances
+			(project "ESP32 Robo Dev Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
