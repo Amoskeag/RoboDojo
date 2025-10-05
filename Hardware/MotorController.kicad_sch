@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "eb6e4850-3cbc-4509-8ec9-c4092ecfcd59")
 	(paper "A4")
 	(title_block
@@ -91,17 +91,53 @@
 						)
 					)
 				)
-				(pin output line
-					(at 13.97 -13.97 180)
+				(pin input line
+					(at -13.97 -13.97 0)
 					(length 2.54)
-					(name "OUTB1"
+					(name "PWM"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 -16.51 0)
+					(length 2.54)
+					(name "STBY/RESET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -13.97 -19.05 0)
+					(length 2.54)
+					(name "EN/FAULT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -145,17 +181,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -13.97 -19.05 0)
+				(pin power_in line
+					(at -2.54 -35.56 90)
 					(length 2.54)
-					(name "EN/FAULT"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "13"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -163,35 +199,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -13.97 -16.51 0)
+				(pin power_in line
+					(at 0 0 270)
 					(length 2.54)
-					(name "STBY/RESET"
+					(name "VS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 2.54 -35.56 90)
-					(length 2.54)
-					(name "TEST0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -217,17 +235,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -13.97 -13.97 0)
+				(pin unspecified line
+					(at 2.54 -35.56 90)
 					(length 2.54)
-					(name "PWM"
+					(name "TEST0"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -254,24 +272,6 @@
 					)
 				)
 				(pin output line
-					(at 13.97 -21.59 180)
-					(length 2.54)
-					(name "SENSEA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
 					(at 13.97 -10.16 180)
 					(length 2.54)
 					(name "OUTA2"
@@ -289,35 +289,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 0 270)
+				(pin output line
+					(at 13.97 -13.97 180)
 					(length 2.54)
-					(name "VS"
+					(name "OUTB1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -35.56 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -344,6 +326,24 @@
 					)
 				)
 				(pin output line
+					(at 13.97 -21.59 180)
+					(length 2.54)
+					(name "SENSEA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
 					(at 13.97 -25.4 180)
 					(length 2.54)
 					(name "SENSEB"
@@ -362,11 +362,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -436,10 +441,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -448,10 +453,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -497,11 +502,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -619,6 +629,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -698,7 +709,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -715,7 +727,41 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Motor Driver"
+		(exclude_from_sim no)
+		(at 134.62 60.96 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e771081-a3d0-499a-b3be-82bfc87b46f0")
+	)
+	(text "Motor Controller\n\nWhats the VRef about?\n\n- The Vref = Rsnsx * I_load(peak)\n\nWhich means that if the back EMF of the motor goes above Vref do the shutdown sequence, this means that the Vref sets the Current Control. \n\nTherefore, the reason we need to put a Filter on the Ref pin. is to convert the Digital output of the MCU to an Analog output for purposes of current control."
+		(exclude_from_sim no)
+		(at 16.51 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37288c5f-188f-46f9-83a0-f3f2240a7cf1")
+	)
+	(text "ESP32-S3 integrates two MCPWM that can be used to drive digital motors and smart light. Each MCPWM\nperipheral has one clock divider (prescaler), three PWM timers, three PWM operators, and a capture module.\nPWM timers are used for generating timing references. The PWM operators generate desired waveform based\non the timing references. Any PWM operator can be configured to use the timing references of any PWM timers.\nDifferent PWM operators can use the same PWM timer's timing references to produce related PWM signals.\nPWM operators can also use different PWM timers'values to produce the PWM signals that work alone.\nDifferent PWM timers can also be synchronized together.\n"
+		(exclude_from_sim no)
+		(at 16.51 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c353048-ab80-483e-abc3-67c7878f83fb")
 	)
 	(junction
 		(at 165.1 101.6)
@@ -1210,39 +1256,6 @@
 			(type default)
 		)
 		(uuid "f9e9fedc-e428-4e95-a63b-d698cf0374ca")
-	)
-	(text "Motor Driver"
-		(exclude_from_sim no)
-		(at 134.62 60.96 0)
-		(effects
-			(font
-				(size 3 3)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e771081-a3d0-499a-b3be-82bfc87b46f0")
-	)
-	(text "Motor Controller\n\nWhats the VRef about?\n\n- The Vref = Rsnsx * I_load(peak)\n\nWhich means that if the back EMF of the motor goes above Vref do the shutdown sequence, this means that the Vref sets the Current Control. \n\nTherefore, the reason we need to put a Filter on the Ref pin. is to convert the Digital output of the MCU to an Analog output for purposes of current control."
-		(exclude_from_sim no)
-		(at 16.51 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "37288c5f-188f-46f9-83a0-f3f2240a7cf1")
-	)
-	(text "ESP32-S3 integrates two MCPWM that can be used to drive digital motors and smart light. Each MCPWM\nperipheral has one clock divider (prescaler), three PWM timers, three PWM operators, and a capture module.\nPWM timers are used for generating timing references. The PWM operators generate desired waveform based\non the timing references. Any PWM operator can be configured to use the timing references of any PWM timers.\nDifferent PWM operators can use the same PWM timer's timing references to produce related PWM signals.\nPWM operators can also use different PWM timers'values to produce the PWM signals that work alone.\nDifferent PWM timers can also be synchronized together.\n"
-		(exclude_from_sim no)
-		(at 16.51 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5c353048-ab80-483e-abc3-67c7878f83fb")
 	)
 	(label "EN{slash}FAULT"
 		(at 109.22 86.36 0)
