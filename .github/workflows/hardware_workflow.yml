@@ -23,7 +23,7 @@ jobs:
     name: KiCad Hardware
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
           submodules: true
@@ -42,7 +42,7 @@ jobs:
           #
 
       - name: upload results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: Board-Hardware
           path: _hardwareOutput
@@ -55,7 +55,7 @@ jobs:
     needs: [KiCad_Hardware]
 
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v5
         with:
           name: Board-Hardware
 
@@ -75,11 +75,11 @@ jobs:
 
     steps:
       # Be in our repo
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v5
         with:
           name: Board-Hardware
 
