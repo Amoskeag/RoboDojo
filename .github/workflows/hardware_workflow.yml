@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      - uses: INTI-CMNB/KiBot@v2_k7
+      - uses: INTI-CMNB/KiBot@v2_k9
         with:
           # Config file
           config: Hardware/config.kibot.yaml
