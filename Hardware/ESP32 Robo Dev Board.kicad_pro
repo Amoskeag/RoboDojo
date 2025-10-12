@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.1
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -59,7 +59,20 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|143663400|74791599|cb00f0be-076b-480b-9bfc-dd89c71483c5|2a4dc0dd-b92b-4cc1-b28f-5499d0bd6b85",
+          ""
+        ],
+        [
+          "silk_edge_clearance|161663400|74791599|cb00f0be-076b-480b-9bfc-dd89c71483c5|33f9264c-66f3-4cd3-b4fd-6c8be8efd0e8",
+          ""
+        ],
+        [
+          "silk_edge_clearance|161663400|74796599|cb00f0be-076b-480b-9bfc-dd89c71483c5|ca6262a2-4932-4a03-b18e-4ef1bfe39a1b",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -139,7 +152,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.15,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
@@ -503,7 +516,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
