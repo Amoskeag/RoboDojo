@@ -5389,6 +5389,17 @@
 		)
 		(uuid "1ba7225e-409d-4a25-a26c-80ff73775d52")
 	)
+	(text "Encoder Connections\n"
+		(exclude_from_sim no)
+		(at 322.58 82.042 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "310e9353-01dc-4063-859a-4188da3ec336")
+	)
 	(text "Reset Circuts"
 		(exclude_from_sim no)
 		(at 275.59 16.51 0)
@@ -5735,6 +5746,16 @@
 		)
 		(uuid "05f610aa-83d9-4ffa-9d5d-e32a0d97baea")
 	)
+	(polyline
+		(pts
+			(xy 316.23 160.02) (xy 349.25 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06540460-31a6-4bbb-b6a1-70a66bf61ed4")
+	)
 	(wire
 		(pts
 			(xy 59.69 109.22) (xy 55.88 109.22)
@@ -5794,6 +5815,16 @@
 			(type default)
 		)
 		(uuid "0e4b8bdf-ad18-488a-b220-0d20be3e6c04")
+	)
+	(polyline
+		(pts
+			(xy 349.25 77.47) (xy 349.25 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed392b3-8475-46fd-b4af-1c788d9fd705")
 	)
 	(wire
 		(pts
@@ -6337,16 +6368,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 222.25) (xy 271.78 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "479715e2-735a-4fb4-97a8-cf5632988371")
-	)
-	(wire
-		(pts
 			(xy 140.97 53.34) (xy 140.97 55.88)
 		)
 		(stroke
@@ -6594,6 +6615,16 @@
 			(type default)
 		)
 		(uuid "60e39082-5adb-4b69-a452-8fb5a167f211")
+	)
+	(wire
+		(pts
+			(xy 321.31 96.52) (xy 336.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61913733-4b35-4961-b85c-34d21bc63a12")
 	)
 	(wire
 		(pts
@@ -7177,6 +7208,16 @@
 	)
 	(wire
 		(pts
+			(xy 336.55 116.84) (xy 321.31 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3098954-58b1-4f99-8a0c-2375e8d19082")
+	)
+	(wire
+		(pts
 			(xy 240.03 107.95) (xy 250.19 107.95)
 		)
 		(stroke
@@ -7597,6 +7638,16 @@
 	)
 	(wire
 		(pts
+			(xy 336.55 119.38) (xy 321.31 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf617e13-7137-4519-b10e-ed7ff49e514a")
+	)
+	(wire
+		(pts
 			(xy 57.15 90.17) (xy 58.42 90.17)
 		)
 		(stroke
@@ -7604,6 +7655,16 @@
 			(type default)
 		)
 		(uuid "cfa8d51c-957b-4368-9be1-8a5d3b68d62e")
+	)
+	(wire
+		(pts
+			(xy 256.54 219.71) (xy 271.78 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d03862f7-3543-4bff-9515-0d7645d9b5f2")
 	)
 	(wire
 		(pts
@@ -7654,16 +7715,6 @@
 			(type default)
 		)
 		(uuid "d8841306-3fca-4676-a18e-caeaeb3e11cd")
-	)
-	(wire
-		(pts
-			(xy 256.54 219.71) (xy 271.78 219.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9a86fc2-3fbd-4c39-9076-4b336af69150")
 	)
 	(wire
 		(pts
@@ -7777,6 +7828,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 222.25) (xy 271.78 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efae8d76-2d5a-463d-bcc8-ec69501a9ccc")
+	)
+	(wire
+		(pts
 			(xy 124.46 67.31) (xy 124.46 26.67)
 		)
 		(stroke
@@ -7864,6 +7925,16 @@
 			(type default)
 		)
 		(uuid "fb33457c-2ff7-465b-bc33-5fd4adff5a5e")
+	)
+	(wire
+		(pts
+			(xy 321.31 93.98) (xy 336.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3f74f1-4f7f-4dde-a358-b541df72d551")
 	)
 	(wire
 		(pts
@@ -8106,7 +8177,7 @@
 		(uuid "3d8b547c-b818-4c53-a985-6bcfd355ea6f")
 	)
 	(label "R_Signal_B"
-		(at 271.78 219.71 180)
+		(at 271.78 222.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8185,6 +8256,16 @@
 		)
 		(uuid "51af073b-5de0-4b98-99f2-0c523f2a21e4")
 	)
+	(label "R_Signal_B"
+		(at 321.31 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "594d9c8a-66b4-4d8c-8f65-630b31534f2f")
+	)
 	(label "I2C_1D"
 		(at 156.21 106.68 180)
 		(effects
@@ -8234,6 +8315,16 @@
 			(justify left bottom)
 		)
 		(uuid "66ecaf6d-05da-4694-bc03-736933a27771")
+	)
+	(label "L_Signal_B"
+		(at 321.31 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69830393-4974-42c1-a292-7c5238160a9f")
 	)
 	(label "I2C_5C"
 		(at 82.55 111.76 180)
@@ -8395,6 +8486,16 @@
 		)
 		(uuid "964f7d80-88dd-4847-b87a-621b286ceb34")
 	)
+	(label "R_Signal_A"
+		(at 331.47 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "97612514-5979-4538-9f1d-dc53031fe40d")
+	)
 	(label "I2C_3C"
 		(at 60.96 158.75 180)
 		(effects
@@ -8545,6 +8646,16 @@
 		)
 		(uuid "c7cd6771-a35a-415e-a399-c12e2dc4c60a")
 	)
+	(label "L_Signal_A"
+		(at 321.31 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c992c3bd-34ab-449f-8881-1cee9da90827")
+	)
 	(label "V_IN"
 		(at 50.8 40.64 0)
 		(effects
@@ -8666,12 +8777,12 @@
 		(uuid "e7400f47-98bf-4e0a-8dc6-33b23a783743")
 	)
 	(label "R_Signal_A"
-		(at 261.62 222.25 0)
+		(at 271.78 219.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "eb566811-ab1a-4694-85a9-3a9cdee82dfd")
 	)
@@ -8838,6 +8949,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Male")
+		(at 341.63 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05d24abf-409c-4562-93a6-cd7e029dc176")
+		(property "Reference" "J_LE1"
+			(at 336.55 89.662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Left Encoder"
+			(at 333.248 99.568 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 341.63 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 341.63 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 341.63 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f14a227-9ee1-4c6b-94e0-2e1c5e91b4f6")
+		)
+		(pin "2"
+			(uuid "2586d4f4-1e7b-498e-aef1-bc661fa496b3")
+		)
+		(instances
+			(project "ESP32 Robo Dev Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J_LE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 207.01 0)
 		(unit 1)
@@ -8965,6 +9145,75 @@
 			(project "ESP32 Robo Dev Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Male")
+		(at 341.63 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1147d9d9-00f6-4d2d-80e2-3ea06a092cab")
+		(property "Reference" "J_RE1"
+			(at 336.804 112.776 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Right Encoder"
+			(at 332.994 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 341.63 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 341.63 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 341.63 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74e220db-12db-49d1-8fa3-382619086a52")
+		)
+		(pin "2"
+			(uuid "304bf571-78f8-421b-a155-6751fe4886f7")
+		)
+		(instances
+			(project "ESP32 Robo Dev Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J_RE1")
 					(unit 1)
 				)
 			)
@@ -12195,7 +12444,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
+		(property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-100x"
 			(at 254 44.45 0)
 			(effects
 				(font
