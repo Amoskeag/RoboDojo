@@ -17405,6 +17405,17 @@
 				(xyz 0 0 0)
 			)
 		)
+		(model "${AMOSKEAG_3DMODELS}/3D/USB4110-GF-A.step"
+			(offset
+				(xyz 0 -3.7 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "B.Cu")
