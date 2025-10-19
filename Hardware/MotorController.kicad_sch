@@ -5,7 +5,7 @@
 	(uuid "eb6e4850-3cbc-4509-8ec9-c4092ecfcd59")
 	(paper "A4")
 	(title_block
-		(title "TurtleBot Mainboard")
+		(title "RoboDojo Motor Controller")
 		(date "2022-11-27")
 		(rev "${REVISION}")
 		(company "Amoskeag Technologies")
@@ -751,17 +751,6 @@
 			(justify left bottom)
 		)
 		(uuid "37288c5f-188f-46f9-83a0-f3f2240a7cf1")
-	)
-	(text "ESP32-S3 integrates two MCPWM that can be used to drive digital motors and smart light. Each MCPWM\nperipheral has one clock divider (prescaler), three PWM timers, three PWM operators, and a capture module.\nPWM timers are used for generating timing references. The PWM operators generate desired waveform based\non the timing references. Any PWM operator can be configured to use the timing references of any PWM timers.\nDifferent PWM operators can use the same PWM timer's timing references to produce related PWM signals.\nPWM operators can also use different PWM timers'values to produce the PWM signals that work alone.\nDifferent PWM timers can also be synchronized together.\n"
-		(exclude_from_sim no)
-		(at 16.51 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5c353048-ab80-483e-abc3-67c7878f83fb")
 	)
 	(junction
 		(at 165.1 101.6)
