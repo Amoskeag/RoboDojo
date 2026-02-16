@@ -10129,8 +10129,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2da14e60-98a9-490e-9e99-91b5e118b487")
-		(property "Reference" "TP2"
-			(at 31.75 106.68 90)
+		(property "Reference" "TP1"
+			(at 31.75 106.6799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10139,7 +10139,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 31.75 109.22 90)
+			(at 31.75 109.2199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10180,7 +10180,7 @@
 		(instances
 			(project "ESP32 Robo Dev Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -12169,8 +12169,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c2cd671-2372-452c-8695-cf1c9b226dbd")
-		(property "Reference" "TP1"
-			(at 31.75 100.33 90)
+		(property "Reference" "TP2"
+			(at 31.75 100.3299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12179,7 +12179,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 31.75 102.87 90)
+			(at 31.75 102.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12220,7 +12220,7 @@
 		(instances
 			(project "ESP32 Robo Dev Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
