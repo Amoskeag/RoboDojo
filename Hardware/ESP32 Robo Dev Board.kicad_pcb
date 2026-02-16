@@ -9,8 +9,8 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(4 "In1.Cu" power "GND")
-		(6 "In2.Cu" power "PWR")
+		(4 "In1.Cu" power)
+		(6 "In2.Cu" power)
 		(2 "B.Cu" signal)
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
@@ -540,7 +540,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "e6c50bb2-6b65-4ffe-b3bc-1a268ff14bfd")
+			(uuid "887b2666-3c42-43ea-beed-eef8623ca932")
 		)
 		(pad "8" smd rect
 			(at 0.75 1.385 270)
@@ -1265,7 +1265,7 @@
 			(net 86 "Net-(Rs3-Pad1)")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5a799b76-2772-46ad-b11e-34ca573549d5")
+			(uuid "b0cfce43-c198-4e11-baca-d12b6ee1297a")
 		)
 		(pad "2" thru_hole circle
 			(at 0 4.5)
@@ -1287,7 +1287,7 @@
 			(net 22 "/Boot")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "7610af10-a48d-4f99-8262-c2857f8c49f5")
+			(uuid "55b505f4-1181-4bc2-9f0c-2982fc3d1ab7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-100x.step"
@@ -5038,7 +5038,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "2f345d3b-e980-458f-887c-4cd2063c9833")
 		)
 		(pad "41" smd rect
 			(at -2.9 0.86 180)
@@ -5047,7 +5047,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "a9445a8a-3f3c-4195-9ae1-5c9df02378bb")
 		)
 		(pad "41" smd rect
 			(at -1.5 -1.94 180)
@@ -5056,7 +5056,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "d8a3dd52-df20-48c8-9c45-74b131860886")
 		)
 		(pad "41" smd rect
 			(at -1.5 -0.54 180)
@@ -5065,7 +5065,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "ce934473-aa10-4090-86d2-d703bff0a4ee")
 		)
 		(pad "41" smd rect
 			(at -1.5 0.86 180)
@@ -5074,7 +5074,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "5881a57e-ef91-4f47-9750-cc87828c49fb")
 		)
 		(pad "41" smd rect
 			(at -0.1 -1.94 180)
@@ -5083,7 +5083,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "19ac58e4-27a0-43bf-853c-7ec34e2b57ae")
 		)
 		(pad "41" smd rect
 			(at -0.1 -0.54 180)
@@ -5092,7 +5092,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "c1f46749-8baa-4cde-82f6-6d29a2a02c6c")
 		)
 		(pad "41" smd rect
 			(at -0.1 0.86 180)
@@ -5101,7 +5101,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "passive")
-			(uuid "3865a852-8375-4606-809e-f25068e998fb")
+			(uuid "db03233c-4a17-4c59-b972-fe033e930aff")
 		)
 		(embedded_fonts no)
 		(model "${ESPRESSIF_3DMODELS}/ESP32-S3-WROOM-1.STEP"
@@ -9663,7 +9663,7 @@
 			(net 1 "GND")
 			(pinfunction "C")
 			(pintype "passive")
-			(uuid "39f4cc3c-aa6b-4d6f-ae03-b29da5f79f94")
+			(uuid "01870cca-5c6d-401f-bc4e-fdfc95df6138")
 		)
 		(pad "2" thru_hole circle
 			(at 0 4.5)
@@ -9685,7 +9685,7 @@
 			(net 59 "Net-(SW1A-D)")
 			(pinfunction "D")
 			(pintype "passive")
-			(uuid "a38f7a8c-0244-4ef9-a379-34e49f62adaf")
+			(uuid "a2b11e4f-de26-44bb-a3d1-d0a35da17828")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-100x.step"
@@ -12745,7 +12745,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "ba6772f3-c230-4d20-9713-88016436aa0a")
+			(uuid "9736cb9a-4126-4e08-9560-48f431f55171")
 		)
 		(pad "8" smd rect
 			(at 0.75 1.385 270)
@@ -15076,7 +15076,7 @@
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "0b91a178-09d5-4803-b5b2-7c0554f7fcad")
+			(uuid "3c01444d-0237-4524-ba0f-653cbb9b15a8")
 		)
 		(pad "S1" smd roundrect
 			(at 5.11 -0.825)
@@ -15087,7 +15087,7 @@
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "0b91a178-09d5-4803-b5b2-7c0554f7fcad")
+			(uuid "26352428-2d8c-434e-a2bf-a61ac80e1860")
 		)
 		(pad "S1" smd roundrect
 			(at 5.11 3.105)
@@ -15098,7 +15098,7 @@
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "0b91a178-09d5-4803-b5b2-7c0554f7fcad")
+			(uuid "1098cb50-6106-4579-b479-102da78e2943")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4110.step"
