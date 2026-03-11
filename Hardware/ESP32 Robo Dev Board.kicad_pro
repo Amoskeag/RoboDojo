@@ -59,24 +59,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_edge_clearance|143663400|74791599|cb00f0be-076b-480b-9bfc-dd89c71483c5|721caf61-2355-46bb-b056-f58eaa23098e",
-          ""
-        ],
-        [
-          "silk_edge_clearance|161663400|74791599|cb00f0be-076b-480b-9bfc-dd89c71483c5|f884eab3-4159-4d98-8f72-5bfbfd1f9d3b",
-          ""
-        ],
-        [
-          "silk_edge_clearance|161663400|74796599|cb00f0be-076b-480b-9bfc-dd89c71483c5|7af19927-2d20-4f28-9a4b-d22c91e402db",
-          ""
-        ],
-        [
-          "unresolved_variable|154850000|80400000|657c9c94-5f1c-4bb1-b634-070847f14e0d|00000000-0000-0000-0000-000000000000",
-          "This is done in C.I (Continuous Intergration)"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
